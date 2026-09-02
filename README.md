@@ -49,53 +49,22 @@ Buka `http://localhost:8000` di browser.
 ## Fitur
 
 **Autentikasi**
-- Login satu form untuk semua role, validasi & pesan error dalam Bahasa Indonesia
-- Middleware kustom `admin` dan `mahasiswa` untuk membatasi akses halaman sesuai peran
-- Logout aman dengan regenerasi session & token CSRF
 
 **Beranda Mahasiswa (mobile-style)**
-- Bingkai tampilan menyerupai aplikasi HP (max-width 448px, bottom navigation dengan 5 menu aktif)
-- Sapaan dinamis sesuai jam (pagi/siang/sore/malam)
-- Kartu ringkasan IPK & SKS tempuh **dihitung otomatis dari data KRS/nilai riil**, bukan lagi angka statis
-- Menu cepat (KRS, KHS, Jadwal, UKT) — semuanya sudah tersambung ke halaman fungsional
-- Notifikasi banner otomatis jika ada tagihan UKT yang belum lunas
-- Jadwal kuliah hari ini (real-time sesuai hari berjalan) & daftar pengumuman
 
 **Jadwal Kuliah** (`/mahasiswa/jadwal`)
-- Jadwal mingguan per hari (tab Senin–Sabtu) diambil dari KRS semester aktif
-- Total SKS & jumlah mata kuliah semester berjalan
 
 **KHS / Kartu Hasil Studi** (`/mahasiswa/khs`)
-- Riwayat nilai per semester dengan IPS masing-masing semester
-- IPK kumulatif dihitung otomatis dari seluruh mata kuliah yang sudah lulus
-- Navigasi antar semester tanpa reload halaman
 
 **Pengisian KRS** (`/mahasiswa/krs`)
-- Tambah/batalkan mata kuliah untuk semester berjalan
-- Meteran total SKS dengan batas maksimal (24 SKS)
-- Validasi otomatis: mencegah SKS melebihi batas & mencegah jadwal bentrok (hari & jam sama)
 
 **Pembayaran UKT** (`/mahasiswa/ukt`)
-- Status tagihan semester berjalan + riwayat pembayaran semester sebelumnya
-- Simulasi pembayaran (pilih metode: Transfer Bank / Virtual Account / E-Wallet)
 
 **Profil Mahasiswa**
-- Lihat data akademik lengkap + edit data kontak (no. HP, alamat, jenis kelamin) dan unggah foto profil
-- Toggle **mode gelap** yang tersimpan otomatis di perangkat (localStorage)
 
 **Pengalaman & Tampilan**
-- Mode gelap (dark mode) di seluruh halaman mahasiswa, tersimpan per perangkat
-- Notifikasi toast (sukses/gagal) untuk setiap aksi (tambah/batal KRS, bayar UKT, update profil)
-- Navigasi antar tab tanpa reload halaman (Alpine.js) untuk jadwal, KHS, dan KRS
-- Halaman profil mahasiswa dengan data akademik lengkap
 
 **Dashboard Admin**
-- Statistik total mahasiswa, aktif, cuti, dan lulus
-- Grafik proporsi mahasiswa per program studi
-- Tabel mahasiswa terbaru
-- **CRUD Data Mahasiswa**: tambah, lihat detail, edit, hapus
-- Pencarian (NIM/nama/email) dan filter status
-- Setiap mahasiswa baru otomatis mendapat akun login (`role: mahasiswa`)
 
 ## Struktur Folder Penting
 
