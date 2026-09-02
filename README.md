@@ -1,4 +1,5 @@
-# Sistem Login & Manajemen Data Mahasiswa (Laravel)
+# Sistem Informasi Akademik SIAKAD
+By Ahmad Riko Dyansyah
 
 Aplikasi berbasis Laravel dengan tiga bagian utama:
 
@@ -44,14 +45,6 @@ php artisan serve
 ```
 
 Buka `http://localhost:8000` di browser.
-
-## Akun Demo (hasil seeder)
-
-| Peran     | Email                  | Password      |
-|-----------|-------------------------|----------------|
-| Admin     | admin@kampus.ac.id      | admin123       |
-| Mahasiswa | riko@kampus.ac.id       | mahasiswa123   |
-| Mahasiswa | amelia@kampus.ac.id     | mahasiswa123   |
 
 ## Fitur
 
