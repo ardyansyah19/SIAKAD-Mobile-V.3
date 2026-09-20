@@ -66,33 +66,6 @@ Buka `http://localhost:8000` di browser.
 
 **Dashboard Admin**
 
-## Struktur Folder Penting
-
-```
-app/Http/Controllers/Auth/LoginController.php          -> Login & logout
-app/Http/Controllers/MahasiswaHomeController.php        -> Beranda, profil (lihat/edit) mahasiswa
-app/Http/Controllers/Mahasiswa/JadwalController.php     -> Jadwal kuliah mingguan
-app/Http/Controllers/Mahasiswa/KhsController.php        -> Kartu Hasil Studi & IPK
-app/Http/Controllers/Mahasiswa/KrsController.php        -> Pengisian/pembatalan KRS
-app/Http/Controllers/Mahasiswa/UktController.php        -> Status & simulasi pembayaran UKT
-app/Http/Controllers/Admin/DashboardController.php      -> Dashboard admin
-app/Http/Controllers/Admin/MahasiswaController.php      -> CRUD data mahasiswa
-app/Http/Middleware/AdminMiddleware.php                 -> Proteksi halaman admin
-app/Http/Middleware/MahasiswaMiddleware.php              -> Proteksi halaman mahasiswa
-app/Models/User.php                                      -> Model akun (role: admin/mahasiswa)
-app/Models/Mahasiswa.php                                 -> Data akademik + hitung IPK/SKS otomatis
-app/Models/MataKuliah.php                                -> Katalog mata kuliah & jadwal
-app/Models/Krs.php                                       -> KRS berjalan sekaligus riwayat KHS
-app/Models/Pembayaran.php                                -> Riwayat & status pembayaran UKT
-database/migrations/                                     -> Skema seluruh tabel
-database/seeders/DatabaseSeeder.php                       -> Data awal (admin, 2 mahasiswa, katalog MK, KRS/KHS, UKT)
-resources/views/auth/login.blade.php                      -> Halaman login
-resources/views/mahasiswa/                                 -> Beranda, jadwal, khs, krs, ukt, profil (mobile)
-resources/views/admin/                                      -> Dashboard & CRUD mahasiswa
-resources/views/components/layouts/                          -> Layout guest, mobile (dark mode + toast), admin
-routes/web.php                                                -> Semua rute aplikasi
-```
-
 ## Catatan Penting
 
 - Folder `vendor/` **tidak disertakan** dalam paket ini — jalankan `composer install` untuk mengunduhnya.
