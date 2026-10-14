@@ -61,6 +61,18 @@
                             </label>
                         </div>
 
+                                                <div class="flex items-center justify-between text-sm">
+                            <label class="flex items-center gap-2 text-gray-500">
+                                <input type="checkbox" name="remember" class="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                Ingat saya
+                            </label>
+                        </div>                        <div class="flex items-center justify-between text-sm">
+                            <label class="flex items-center gap-2 text-gray-500">
+                                <input type="checkbox" name="remember" class="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                Ingat saya
+                            </label>
+                        </div>
+
                         <button type="submit"
                             class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 rounded-xl shadow-lg shadow-indigo-200 hover:opacity-90 active:scale-[.98] transition">
                             Masuk
